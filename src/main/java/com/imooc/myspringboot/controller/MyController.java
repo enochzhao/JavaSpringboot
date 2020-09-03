@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MyController {
 //    下面这个注解代表 out方法和"/out"路由绑定在一起
     @RequestMapping("/out")
+//    这个注解会将“success”输出到客户端的浏览器上
     @ResponseBody
     public String out(){
         return "success";
